@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "test-mujoco-docker-render"
+version = "0.1.0"
+description = "kit project for rendering mujoco in headless docker container to generate rendered outputs"
+authors = ["Thomas Moriarty <tojomcmo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mujoco = "^3.2.0"
+pillow = "^10.4.0"
+glad = "^0.1.36"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.0"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
